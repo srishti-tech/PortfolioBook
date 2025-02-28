@@ -5,16 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="icon" href="book.png"  />
     <title>Portfolio Book</title>
     <link rel="stylesheet" href="style.css">
+
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
+    
     <script type="text/javascript">
      (function(){
       emailjs.init({
@@ -23,15 +26,14 @@
      })();
     </script>
     
-    
     <style>
     
       .profile-card {
           text-align: center;
-          margin-top: 80px;
+          margin-top: 75px;
           box-shadow: 0px 0px 2px 0px   rgba(0, 0, 0, 0.2);
           align-items: center;
-          padding: 20px;
+          padding: 18px;
       }
       .profile-card2 {
           margin-top: 10px;
@@ -43,7 +45,8 @@
           height: 150px;
           border-radius: 50%;
           box-shadow: 2px   rgba(0, 0, 0, 0.2);
-           filter:  drop-shadow(5px 9px 6px rgba(0,0,0,0.5));    
+          filter:  drop-shadow(5px 9px 6px rgba(0,0,0,0.5));      
+    
           margin: -80px auto 10px;
       }
      
@@ -63,32 +66,34 @@
           font-size: 14px;
           color: #121111;
       }
-  </style>
+    </style>
+
   </head>
 
 <body>
 
 <div class="wrapper">
-<div class="cover cover-left"></div>
-<div class="cover cover-right turn"></div>
-<div class="book">
-    
-      <!-- profile page -->
-    <div class="book-page page-left">
-         <div class="profile-page">
+<div class="cover cover-left" id="turn-left"></div>
+<div class="cover cover-right turn" id="turn-right"></div>
 
-<!-- Navbar -->
-       <div class="navbar">
-             
+<div class="book">
+      <!-- profile page -->
+    
+    <div class="book-page page-left" >
+
+        <div class="profile-page" id="0">
+
+          <!-- Navbar -->
+          <div class="navbar"> 
             <a href="#" class="nomove"><i class="fa fa-fw fa-envelope"></i>srishti.shrivastava123@gmail.com</a> 
             <a href="Srishti Shrivastava Resume (1).pdf" download class="move"><i class="fa fa-fw fa-user" ></i> Resume</a>
             <!--<a href="#" class="move"><i class="fa fa-fw fa-"></i> Skills</a>
             <a href="#" class="move"><i class="fa fa-fw fa-search"></i> Project</a> -->
           </div> 
         
-           <div class="profile-card">
-            
-          <img src="img/profile.png" alt="Profile Picture" class="pic" >
+          <div class="profile-card">
+    
+            <img src="img/profile.png" alt="Profile Picture" class="pic" >
             <h2>SRISHTI SHRIVASTAVA</h2>
             <h3>Java | HTML/CSS/JS | Android Studio | ReactJS | UI/UX</h3>
             <h3>Bhopal, Madhya Pradesh, India</h3>
@@ -99,17 +104,23 @@
             <a href="https://www.instagram.com/art_up06/"><i class='bx bxl-instagram-alt'></i></a>
             </div>
 
-            </div>
-            <div class="profile-card2"> 
+          </div>
+          <div class="profile-card2"> 
             <p>"Passionate and detail-oriented Software Developer with experience in frontend technologies, including Java,Html, Boostrap, React. Skilled in building user-friendly web and mobile applications, with a strong foundation in UI/UX design using Figma. Eager to contribute innovative solutions and grow in the IT industry."</p>
-<br>
+            <br>
             <div class="btn-box">
              <a href="SRISHTI SHRIVASTAVA_RESUME (1).pdf" download class="btn">Download CV</a>
              <a href="Srishti_coverLetter.pdf" download class="btn">Download Cover letter</a>
             </div> 
            </div>
-             
-          </div> 
+           <span class="number-page">0</span>
+        <!-- prev button -->
+        <span class="nextprev-btn back" data-page="0">
+         <i class="bx bx-chevron-left"></i>
+        </span>   
+        </div> 
+       
+
     </div>
 
       <!-- page 1 & 2 -->
@@ -251,7 +262,7 @@
               <h4>COLLEGE MANAGEMENT APP : </h4>
               
              </div>
-              <p>This application is about college management system designed to streamline and manage the operations of an educational institution.
+              <p>This application is designed to streamline and manage the operations of an educational institution.
              </p>
              <table style="width:100%">
               <tr>
@@ -261,21 +272,23 @@
               </tr>
             
              </table>
-
+             <br>
              
              <table style="width:100%">
               <tr>
                 <th> <b>TECHNOLOGIES:</b></th></tr>
                 <tr> <td><u class="under">Frontend:</u>
-                  Developed in Android Studio using Java, ensuring smooth navigation and interaction. </td></tr>
-                <tr> <td><u class="under">Backend:</u>SQL was used for database like storing and retrieving data on users, attendance, assignments, and results.
+                  Developed in Android Studio using Java, ensuring smooth navigation.</td></tr>
+                <tr> <td><u class="under">Backend:</u>SQL was used for database like storing and retrieving data
+                   of users attendance, assignments etc.
                 </td></tr>
-                <tr> <td><u class="under">Design:</u> Figma was used for creating wireframes and designing an intuitive UI for different user roles. </td></tr>
+                <tr> <td><u class="under">Design:</u> Figma was used for creating 
+                  wireframes and designing UI. </td></tr>
 </table>
            </div>
   
         </div>
-          <span class="number-page">3</span>
+            <span class="number-page">3</span>
             <!-- prev button -->
                 <span class="nextprev-btn" data-page="turn-2">
              <i class="bx bx-chevron-right"></i>
@@ -334,11 +347,117 @@
        </div>
 
     </div>
- hu
-    <!-- page 5 & 6 -->
-    <div class="book-page page-right turn" id="turn-3">
+ 
+   <!-- page 5 & 6 -->
+   <div class="book-page page-right turn" id="turn-3">
 
-      <!-- page 3 (My projects) -->
+    <!-- page 5 (My projects) -->
+   <div class="page-front">
+      <h1 class="title">MY PROJECTS</h1>
+      <div class="portfolio-box">
+         <div class="img-box">
+          <img src="project/CMH.jpg" alt="" class="img2">
+          <img src="project/CM.jpg" alt="" class="img2">
+          <img src="project/CMmain.jpg" alt="" class="img2">
+          <img src="project/CMMenu.jpg" alt="" class="img2">
+       
+
+         </div>
+         <div class="info-box">
+           <div class="info-title liveoutput">
+            <h4>COLLEGE MANAGEMENT APP : </h4>
+            
+           </div>
+            <p>This application is designed to streamline and manage the operations of an educational institution.
+           </p>
+           <table style="width:100%">
+            <tr>
+              <th> <b>FEATURES:</b></th>
+            </tr>
+            <tr> <td>The system supports multiple roles like Students, Admins, and Teachers, each having specific access and functionalities.</td>
+            </tr>
+          
+           </table>
+           <br>
+           
+           <table style="width:100%">
+            <tr>
+              <th> <b>TECHNOLOGIES:</b></th></tr>
+              <tr> <td><u class="under">Frontend:</u>
+                Developed in Android Studio using Java, ensuring smooth navigation.</td></tr>
+              <tr> <td><u class="under">Backend:</u>SQL was used for database like storing and retrieving data
+                 of users attendance, assignments etc.
+              </td></tr>
+              <tr> <td><u class="under">Design:</u> Figma was used for creating 
+                wireframes and designing UI. </td></tr>
+</table>
+         </div>
+
+      </div>
+          <span class="number-page">5</span>
+          <!-- prev button -->
+              <span class="nextprev-btn" data-page="turn-3">
+           <i class="bx bx-chevron-right"></i>
+              </span>
+    </div>
+     
+    <!-- page 6 (my projects) -->
+   <div class="page-back">
+        <h1 class="title">MY PROJECT</h1>
+        <div class="portfolio-box">
+          <div class="img-box">
+           <img src="project/Weather.jpg" alt="">
+           <img src="project/WeaP.jpg" alt="" class="img2">
+    
+          </div>
+          <div class="info-box">
+            <div class="info-title">
+             <h4>WEATHER DASHBOARD WEBSITE:</h4>
+             
+             <a href="https://raw.githack.com/srishti-tech/CodeAlpha_weatherDashboard/ff84c710abdb8fc8ab91c3c4bb2bb98d4c9e49e8/index.html" class="btn">  LIVE  PROJECT</a>  
+            </div>
+             <p>This web application allows you to know the weather of the city. 
+             You can input the city name know its weather description of present date through OpenWeatherAPI.</p>
+            <table style="width:100%">
+             <tr>
+               <th> <b>FEATURES:</b></th>
+             </tr>
+             <tr> <td> <u class="under"> Task Management:</u> Input the city name effortlessly.</td>
+             </tr>
+             <tr><td> <u class="under">Get details:</u> We can get the weather report of the city we have entered.
+             </td></tr>
+             <tr><td><u class="under">Responsive interface:</u> It is responsive to the size of the window.
+             </td></tr>
+            </table>
+             <br/>
+            <table style="width:100%">
+             <tr>
+               <th> <b> TECHNOLOGIES USED:</b></th>
+             </tr>
+             <tr> <td><u class="under">HTML:</u>  Used for creating the structure of the project.</td> </tr>
+             <tr><td> <u class="under"> CSS & Bootstrap:</u> Styled the weather dashboard for an appealing user interface.
+             </td></tr>
+             <tr><td><u class="under">JavaScript:</u>  Implemented task management logic and interactivity features.
+             </td></tr>
+            </table>
+             
+          </div>
+ 
+       </div>
+
+         <span class="number-page">6</span>
+         <!-- prev button -->
+         <span class="nextprev-btn back" data-page="turn-3">
+         <i class="bx bx-chevron-left"></i>
+         </span>
+     </div>
+
+  </div>
+
+    <!-- page 7 & 8 -->
+    <div class="book-page page-right turn" id="turn-4">
+
+      <!-- page 7 (My projects) -->
      <div class="page-front">
         <h1 class="title">MY PROJECT</h1>
         <div class="portfolio-box">
@@ -385,14 +504,14 @@
           </div>
  
        </div>
-          <span class="number-page">5</span>
+          <span class="number-page">7</span>
             <!-- prev button -->
-                <span class="nextprev-btn" data-page="turn-3">
+                <span class="nextprev-btn" data-page="turn-4">
              <i class="bx bx-chevron-right"></i>
                 </span>
       </div>
        
-      <!-- page 4 (my projects) -->
+      <!-- page 8 (contact) -->
      <div class="page-back">
           <h1 class="title">Get in Touch</h1>
          
@@ -404,7 +523,7 @@
                   <div id="social-platforms">
       
                     <a class="btn1 btn-icon btn-github" href="https://github.com/srishti-tech"><i class="fa fa-github"></i><span>Github</span></a>
-                 <!--  <a class="btn1 btn-icon btn-twitter" href="https://github.com/srishti-tech"><i class="fa fa-twitter"></i><span> Twitter </span></a>  --> 
+                 <!--  <a class="btn1 btn-icon btn-twitter" href="https://github.com/srishti-tech"><i class="fa fa-twitter"></i><span> Twitter </span></a>  -->
                     <a class="btn1 btn-icon btn-googleplus" href="https://www.instagram.com/art_up06/"><i class="fa fa-instagram"></i><span>Instagram</span></a>
                     <a class="btn1 btn-icon btn-pinterest" href="https://in.pinterest.com/srishtishrivastava123/"><i class="fa fa-pinterest"></i><span>Pinterest</span></a>
                     <a class="btn1 btn-icon btn-linkedin" href="https://www.linkedin.com/in/srishti26dec9/"><i class="fa fa-linkedin"></i><span>LinkedIn</span></a>
@@ -427,20 +546,27 @@
             </div>
           </div>
 
-           <span class="number-page">6</span>
+           <span class="number-page">8</span>
            <!-- prev button -->
-           <span class="nextprev-btn back" data-page="turn-3">
+           <span class="nextprev-btn back" data-page="turn-4">
            <i class="bx bx-chevron-left"></i>
            </span>
+
+           <a href="#" class="back-profile">
+            <p>Profile</p>
+            <i class="bx bxs-user"></i>
+           </a>
        </div>
 
     </div>
 
    
 </div>
+</div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="script.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 
 </html>
